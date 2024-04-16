@@ -3,14 +3,14 @@ import post from "../../assets/post.png"
 
 function Mission() {
     return (
-        <div className='container flex flex-col-reverse items-center gap-6 py-16 mx-auto md:flex-row'>
+        <div className='container flex flex-col-reverse items-center gap-10 py-16 mx-auto md:flex-row'>
             <div className='w-full'>
-                <img src={post} alt="Mission" className='h-full' />
+                <img src={post} alt="Mission" className='' />
             </div>
-            <div className='w-full text-lg'>
+            <div className='w-full text-base md:text-lg'>
                 <p className='text-lg italic tint-color'>About Stellar Dairies</p>
                 <h3 className='my-3 text-4xl font-black main-color'>WE CREATE THE BEST DAIRY PRODUCT</h3>
-                <p className='mt-3 text-lg'>With a background in manufacturing engineering and facing unemployment, Out CEO quickly jumped into training for yoghurt production and later birthed Stellar Dairyland. The rest is history as they say.</p>
+                <p className='mt-3'>With a background in manufacturing engineering and facing unemployment, Out CEO quickly jumped into training for yoghurt production and later birthed Stellar Dairyland. The rest is history as they say.</p>
 
                 <div className='mt-6 mb-4'>
                     <h2 className='text-lg font-bold main-color'>Vision</h2>
