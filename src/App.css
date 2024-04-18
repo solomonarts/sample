@@ -28,6 +28,7 @@
 
 .active{
   color: var(--main-color);
+  font-weight: 700;
 }
 @media only screen and (min-width: 1360px) {
   .container {
@@ -37,4 +38,25 @@
 .text-border{
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: rgb(201, 201, 201);
+}
+
+
+.mySwiper {
+  /* height: 30%; */
+  box-sizing: border-box;
+  padding: 10px 0;
+  z-index: 9999;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  cursor: pointer;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
 }
