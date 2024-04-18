@@ -5,6 +5,7 @@ import Footer from './footer'
 import { Route, Routes } from 'react-router-dom'
 import Products from '../pages/products'
 import AboutUs from '../pages/about'
+import Contact from '../pages/contact'
 
 function Content() {
     return (
@@ -15,6 +16,7 @@ function Content() {
                     <Route path='' element={<Home />} />
                     <Route path='products' element={<Products />} />
                     <Route path='about' element={<AboutUs />} />
+                    <Route path='contact' element={<Contact />} />
                     <Route path='*' element={<Home />} />
                 </Routes>
             </div>

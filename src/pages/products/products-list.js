@@ -8,7 +8,7 @@ function ProductsList() {
             {products.map((p, i) => <div key={i} className='pt-6 bg-white border rounded-xl'>
                 <img src={p.image} alt={p.title} className='aspect-[3/2] object-contain' />
                 <div className='p-3'>
-                    <h3 className='mt-3 text-sm font-medium sm:text-base'>{p.title}</h3>
+                    <h3 className='mt-3 text-sm font-medium line-clamp-1 sm:text-base'>{p.title}</h3>
                     <p className='font-bold md:text-lg main-color'>KES. {numberFormatter(p.price)}</p>
                 </div>
             </div>)}

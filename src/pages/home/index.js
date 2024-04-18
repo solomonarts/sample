@@ -21,9 +21,11 @@ import 'swiper/css/free-mode';
 
 
 import { Autoplay, Navigation, EffectFade, Thumbs, FreeMode } from 'swiper/modules';
+import { Fade, Slide } from 'react-awesome-reveal'
 
 function Home() {
 
+    document.title = "Stellar Dairies"
     const [thumbsSwiper, setThumbsSwiper] = React.useState(null);
 
     const slides = [
@@ -31,8 +33,8 @@ function Home() {
             background: bg,
             heading: "Welcome to Stellar Dairyland",
             title: <h2 className='font-semibold tracking-wider uppercase md:text-lg leading-wide '>
-                Welcome to Stellar Dairyland<br />
-                <span className='text-4xl font-black tracking-wider md:text-5xl main-color'>A deliciously healthy option</span></h2>
+                Welcome to <br />
+                <span className='text-4xl font-black tracking-wider md:text-5xl main-color'>Stellar Dairyland, <br />a deliciously healthy option</span></h2>
             , "description": "With a variety of flavors and variations, with Stellar, You can't go wrong."
         },
         {
@@ -85,8 +87,8 @@ function Home() {
                                 <div className='container flex flex-col items-center mx-auto text-lg text-white gap-y-8 pt-28 pb-36 md:pt-40 md:pb-60 lg:flex-row'>
 
                                     <div className='flex-1 max-w-2xl px-3 md:px-0'>
-                                        {slide.title}
-                                        <p className='mt-3 text-base md:text-lg'>{slide.description}</p>
+                                        <Fade triggerOnce> {slide.title}</Fade>
+                                        <Slide triggerOnce><p className='mt-3 text-base md:text-lg'>{slide.description}</p></Slide>
 
                                         <button className='main-bg rounded-bl-3xl rounded-tr-3xl text-white px-14 pt-3 pb-3.5 text-sm mx-auto mt-6 font-medium'>Learn More</button>
                                     </div>
@@ -106,7 +108,7 @@ function Home() {
                     <div className='max-w-3xl '>
                         <Swiper
                             onSwiper={setThumbsSwiper}
-                            spaceBetween={10}
+                            spaceBetween={25}
                             slidesPerView={4}
                             freeMode={true}
                             watchSlidesProgress={true}

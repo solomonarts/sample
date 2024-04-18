@@ -6,7 +6,7 @@ import Founder from './founder'
 import Team from './team'
 
 function AboutUs() {
-    document.title = "About us | Stellar Dairies"
+    document.title = "About | Stellar Dairies"
     return (
         <div>
             <PageHead title="About Us" />

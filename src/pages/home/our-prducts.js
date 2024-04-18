@@ -14,7 +14,7 @@ function OurPrducts() {
                     {products.slice(0, 10).map((p, i) => <div key={i} className='pt-6 bg-white rounded-xl'>
                         <img src={p.image} alt={p.title} className='aspect-[3/2] object-contain' />
                         <div className='p-3'>
-                            <h3 className='mt-3 text-sm font-medium text-center sm:text-base'>{p.title}</h3>
+                            <h3 className='mt-3 text-sm font-medium text-center line-clamp-1 sm:text-base'>{p.title}</h3>
                         </div>
                     </div>)}
                 </div>

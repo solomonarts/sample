@@ -1,11 +1,14 @@
 import React from 'react'
 import wave from "../assets/wave.png"
 import logo from "../assets/logo.png"
+import { menu, contacts, socials } from '../constants/menu'
+import { Link } from 'react-router-dom'
 
 function Footer() {
+
     return (
-        <div style={{ backgroundColor: "#16938436" }} className='relative'>
-            <img src={wave} alt="wave" className='absolute top-0 w-full h-full' />
+        <div style={{ backgroundColor: "#16938436", backgroundImage: `url(${wave})` }} className='relative bg-bottom bg-no-repeat'>
+            {/* <img src={wave} alt="wave" className='absolute top-0 w-full h-full' /> */}
             <div className='container relative mx-auto'>
                 <div className='grid grid-cols-2 gap-8 py-16'>
                     <div>
@@ -14,12 +17,23 @@ function Footer() {
                     </div>
                     <div className='grid grid-cols-2'>
                         <div>
-                            <h2 className='mb-3 text-lg font-medium'>Links</h2>
-                            <p>Footer elements</p>
+                            <h2 className='mb-3 text-lg font-medium'>Quick Links</h2>
+                            {menu.map((m, i) => <div key={i} className='mb-1'>
+                                <Link to={`/` + m.link} >
+                                    <p>{m.label}</p>
+                                </Link>
+                            </div>)}
                         </div>
                         <div>
                             <h2 className='mb-3 text-lg font-medium'>Contacts</h2>
-                            <p>Footer elements</p>
+                            {contacts.map((s, i) => <div key={i} className='flex items-center gap-3 mt-3'>
+                                {s.icon}
+                                <p>{s.link}</p>
+                            </div>)}
+
+                            <div className='flex gap-3 mt-5 text-orange-600'>
+                                {socials.map((s, i) => <div>{s.icon}</div>)}
+                            </div>
                         </div>
                     </div>
                 </div>
