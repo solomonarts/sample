@@ -9,6 +9,7 @@ import { SlLocationPin } from "react-icons/sl";
 export const menu = [
     { label: "Home", "link": "" },
     { label: "Products", "link": "products" },
+    { label: "Reseller", "link": "reseller" },
     { label: "About", "link": "about" },
     { label: "Contact", "link": "contact" },
     // { label: "Licensing", "link": "licencing" }

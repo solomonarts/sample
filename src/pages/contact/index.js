@@ -6,8 +6,8 @@ function Contact() {
     return (
         <div>
             <PageHead title="Contact Us" />
-            <div className='container flex gap-8 py-16 mx-auto'>
-                <div className='w-2/5'>
+            <div className='container flex flex-col gap-8 py-16 mx-auto lg:flex-row'>
+                <div className='w-full lg:w-2/5'>
                     <p className='text-lg italic tint-color'>For more Information</p>
                     <h3 className='mt-3 mb-6 text-4xl font-black main-color'>Hey, let's talk!</h3>
 

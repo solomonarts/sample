@@ -10,7 +10,7 @@ function Footer() {
         <div style={{ backgroundColor: "#16938436", backgroundImage: `url(${wave})` }} className='relative bg-bottom bg-no-repeat'>
             {/* <img src={wave} alt="wave" className='absolute top-0 w-full h-full' /> */}
             <div className='container relative mx-auto'>
-                <div className='grid grid-cols-2 gap-8 py-16'>
+                <div className='grid grid-cols-1 gap-8 py-16 lg:grid-cols-2'>
                     <div>
                         <img src={logo} alt="Stellar Dairies" className='h-20' />
                         <p className='mt-5 text-lg'>At Stellar Dairyland, we strive to bring quality products by conducting our production at high standards of hygiene. In addition, our milk is sourced directly from local farmers and pasteurized by us. We use top-of-the-range culture and ingredients to ensure we have the best quality of products.</p>
@@ -31,7 +31,7 @@ function Footer() {
                                 <p>{s.link}</p>
                             </div>)}
 
-                            <div className='flex gap-3 mt-5 text-orange-600'>
+                            <div className='flex gap-3 mt-5 text-orange-400'>
                                 {socials.map((s, i) => <div>{s.icon}</div>)}
                             </div>
                         </div>

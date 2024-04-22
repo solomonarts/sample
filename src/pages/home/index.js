@@ -86,7 +86,7 @@ function Home() {
                             <div className='relative backdrop-blur-0'>
                                 <div className='container flex flex-col items-center mx-auto text-lg text-white gap-y-8 pt-28 pb-36 md:pt-40 md:pb-60 lg:flex-row'>
 
-                                    <div className='flex-1 max-w-2xl px-3 md:px-0'>
+                                    <div className='flex-1 max-w-2xl px-3 md:px-10'>
                                         <Fade triggerOnce> {slide.title}</Fade>
                                         <Slide triggerOnce><p className='mt-3 text-base md:text-lg'>{slide.description}</p></Slide>
 
@@ -104,7 +104,7 @@ function Home() {
                     </SwiperSlide>)}
                 </Swiper>
 
-                <div className='flex justify-end mt-[-14rem] pe-16'>
+                <div className='hidden md:flex justify-end mt-[-14rem] pe-16'>
                     <div className='max-w-3xl '>
                         <Swiper
                             onSwiper={setThumbsSwiper}
