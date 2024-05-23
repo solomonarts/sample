@@ -12,7 +12,7 @@ function AboutUs() {
             <PageHead title="About Us" />
             <div className='container mx-auto'>
                 <Founder />
-                <Mission />
+                {/* <Mission /> */}
             </div>
 
             <Motivation />

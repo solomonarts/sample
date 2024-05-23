@@ -1,19 +1,40 @@
-
-const product = require("../assets/products/product.jpg")
-const product1 = require("../assets/products/product1.jpg")
-const product2 = require("../assets/products/product2.jpg")
+import { bgpics } from ".";
 
 export const products = [
-    { image: product, title: "Creamy Vanilla", price: 1000 },
-    { image: product1, title: "Luscious Strawberry", price: 1200 },
-    { image: product2, title: "Natural Yoghurt", price: 800 },
-    { image: product, title: "Mango Flavor", price: 1000 },
-    { image: product1, title: "Passion Flavor", price: 2500 },
-    { image: product2, title: "Blackcurrant Flavor", price: 1000 },
-    { image: product, title: "Creamy Vanilla", price: 750 },
-    { image: product1, title: "Luscious Strawberry", price: 1000 },
-    { image: product2, title: "Natural Yoghurt", price: 1000 },
-    { image: product, title: "Mango Flavor", price: 1070 },
-    { image: product1, title: "Passion Flavor", price: 1500 },
-    { image: product2, title: "Blackcurrant Flavor", price: 2000 },
-]
+  {
+    image: bgpics["strawberry.png"],
+    title: "Probiotic Strawberry Yoghurt",
+    price: 230,
+  },
+  {
+    image: bgpics["natural.png"],
+    title: "Probiotic Natural Yoghurt",
+    price: 230,
+  },
+  { image: bgpics["mango.png"], title: "Probiotic Mango Yoghurt", price: 1000 },
+  {
+    image: bgpics["passion.png"],
+    title: "Probiotic Passion Yoghurt",
+    price: 230,
+  },
+  {
+    image: bgpics["blackcurrant.png"],
+    title: "Probiotic Blackcurrant Yoghurt",
+    price: 230,
+  },
+  {
+    image: bgpics["vanilla1l.jpg"],
+    title: "Probiotic Vanilla Yoghurt",
+    price: 230,
+  },
+  {
+    image: bgpics["vanilla2l.jpg"],
+    title: "Available in 2 ltr",
+    price: 450,
+  },
+  {
+    image: bgpics["vanilla5l.jpg"],
+    title: "Available in 5 ltr",
+    price: 1130,
+  },
+];

@@ -7,9 +7,24 @@
   --main-color: #169384;
   /* --main-color: #20b4a3; */
   /* --main-color:#103371 */
+
+  --common-white: #ffffff;
+  --common-black: #000000;
+  --tan: #f4d695;
+  --tan-sprite: #dfddc4;
+  --light-white: #e8eced;
+  --white-sprite: #f7f6f2;
+  --common-green: #169384;
+  --green-sprite: #43d1c0;
+  --common-blue: #122849;
+  --section-padding: 3% 15%;
+  --title-fts: 40px;
+  --title-ftw: 900;
+  --x-padding: 0 4%;
+  --section-radius: 20px;
 }
 
-.tint-color{
+.tint-color {
   color: #f69200;
 }
 
@@ -26,7 +41,7 @@
   padding-right: 1rem;
 }
 
-.active{
+.active {
   color: var(--main-color);
   font-weight: 700;
 }
@@ -35,11 +50,10 @@
     max-width: 1360px;
   }
 }
-.text-border{
+.text-border {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: rgb(201, 201, 201);
 }
-
 
 .mySwiper {
   /* height: 30%; */
@@ -60,3 +74,17 @@
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
 }
+
+.product__footer {
+  background: rgba(255, 255, 255, 0.329);
+  border-radius: 0 0 10px 10px;
+  backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: 0.5px -0.4px 3px 0.2px #0002296b;
+}
+
+@import "./layout/Footer/footer.scss";
+@import "./pages/home/Testimonial/Testimonial.scss";
+@import "./pages/home/Faq/Faq.scss";
+@import "./pages/reseller/reseller.scss";
+@import "./pages/signup/register.scss";
+@import "./pages/dashboard/dash.scss";
